@@ -1,0 +1,69 @@
+# =============================================================================
+# uav_final version
+# 起飞：python3 src/run_takeoff.py
+# 圆轨迹：python3 src/run_circle.py
+# 蝴蝶结：python3 src/run_bowtie.py
+# =============================================================================
+
+mavlink:
+  device: /dev/ttyAMA0
+  baudrate: 57600
+  heartbeat_timeout: 5.0
+
+takeoff:
+  hold_settle_sec: 1.0
+  cmd_interval_sec: 2.0
+  monitor_climb: true
+  altitude_m: 30.0
+  altitude_ratio: 0.9
+  timeout_sec: 180.0
+  position_timeout_sec: 15.0
+
+offboard:
+  warmup_sec: 2.0
+  warmup_style: cruise        # hold=钉原点 | cruise=平稳前推 setpoint
+  confirm_timeout: 15.0
+  hold_after_sec: 0.0          # 路径跟随前不做短前飞
+  stream_hz: 25.0
+  cruise_speed_mps: 12.0
+  lookahead_m: 40.0
+
+circle:
+  hold_after_offboard_sec: 0.0
+
+controller:
+  prediction_horizon: 8.0       # Tp [s] → k0=3/Tp²≈0.047；25s 时 k0≈0.005 几乎无横向收敛
+  control_order: 1
+  alpha: 2.0                   # γ_c = γ + ν/α
+
+flight:
+  airspeed: 23.0               # 控制律默认空速参考
+  max_roll: 35.0
+  max_pitch: 15.0
+  alpha_trim: 0.05
+
+path:
+  path_type: bow_tie             # circle | bow_tie（run_circle/run_bowtie 会覆盖）
+  # 圆: x_d = cx + R cosθ, y_d = cy + R sinθ
+  radius_m: 100.0
+  radius_scale_with_speed: true
+  radius_roll_fraction: 0.88
+  circle_align_heading: true     # 锁圆时 θ₀ 与机头对齐
+  # 论文 Section VI-E 平面蝴蝶结: x_d = cx + A cosθ, y_d = cy + B sin(2θ)
+  bow_tie_amplitude_x: 200.0   # A [m]（原 140，加大北向尺度）
+  bow_tie_amplitude_y: 70.0    # B [m]（原 45，加大横向环半径）
+  entry_point: lower_loop_east   # 下环东侧 θ=+45°，向北飞时 path.y 略向西（见示意图）
+  bow_tie_x_sign: 1.0           # 论文标准 +A·cosθ
+  bow_tie_y_sign: 1.0           # 论文标准 +B·sin(2θ)
+  path_forward_sign: -1.0       # θ 减小；在 θ=+45° 东侧沿环向北
+  theta_dot_max: 0.35
+  mu_max: 1.0
+
+stage5:
+  skip_takeoff: false
+  duration_sec: 120.0
+  stream_hz: 25.0
+  thrust: 0.35
+  print_interval_sec: 0.5          # 日志 2 Hz
+  position_timeout_sec: 15.0
+  phi_rate_limit_deg_s: 15.0       # 滚转变化率限制，避免瞬间打满 ±35°
