@@ -1,0 +1,311 @@
+# 圆轨迹  2026-06-13 14:45:33
+# 文件=log29.txt  计划时长=120s  记录间隔=0.5s
+# params.yaml radius_m=120  锁定R=120.0m
+
+==================================================
+ 无风平面绕圆：论文式 (16)(24)
+==================================================
+x_d=cx+120cosθ, y_d=cy+120sinθ
+R=120.0m（名义120m，未放大）
+  V_lock=15.3m/s  R_min@V_lock=28.7m
+锚点 cx,cy=(163.7, -119.3)
+θ₀=94.0° θ̇₀=-0.1271 rad/s |h|₀=0.0 m 定高 z=29.5 m
+|h| = 当前 NED 位置到路径点 (x_d,y_d) 的水平距离（≈√(ex²+ey²)）
+固定油门 thrust=0.35  Tp=3 s
+起始途径点 preset=lower_loop_east 路径切线≈4.0°（0°=北，+90°=东）
+路径走向（θ 积分方向）:
+  θ₀=+94.0°  θ̇=-7.28°/s  切向速度 NED: 北15.2m/s + 东1.1m/s
+  NED: x↑北  y→东  | err=(pos-path) | path.y↓=向西 path.y↑=向东
+
+风扰观测器: ON  l1=2.0 l2=1.5 l3=1.5 L=1.0  风扰抗扰: ON
+  每拍日志第4行: wind̂=(wx,wy,wz) m/s  |wind̂|=... m/s  |wind̂|_avg=... m/s
+[  0.5s] φ=-10.4° V=15.5 m/s |h|=0.7 m R=120m(cfg120)
+         pos=(163.4, 1.1) path=(162.8, 0.7) err=(+0.6, +0.4) pos_age=1ms
+         θ=+90.1° θ̇=-0.1321 μ=-0.014 ψ=+19.9°
+         wind̂=(+0.23,-0.74,-0.16) m/s  |wind̂|=0.79 m/s  |wind̂|_avg=0.79 m/s
+[  1.0s] φ=-20.0° V=16.1 m/s |h|=1.9 m R=120m(cfg120)
+         pos=(171.9, 1.9) path=(170.7, 0.5) err=(+1.3, +1.4) pos_age=0ms
+         θ=+86.4° θ̇=-0.1413 μ=-0.026 ψ=+18.7°
+         wind̂=(+1.10,-2.03,-0.76) m/s  |wind̂|=2.43 m/s  |wind̂|_avg=1.61 m/s
+[  1.6s] φ=-16.5° V=16.7 m/s |h|=3.0 m R=120m(cfg120)
+         pos=(180.7, 2.4) path=(179.1, -0.3) err=(+1.5, +2.6) pos_age=1ms
+         θ=+82.3° θ̇=-0.1564 μ=-0.037 ψ=+14.1°
+         wind̂=(+2.31,-3.60,-1.40) m/s  |wind̂|=4.50 m/s  |wind̂|_avg=2.57 m/s
+[  2.1s] φ= -6.9° V=17.4 m/s |h|=4.4 m R=120m(cfg120)
+         pos=(189.9, 2.3) path=(188.5, -1.8) err=(+1.4, +4.2) pos_age=0ms
+         θ=+77.7° θ̇=-0.1746 μ=-0.039 ψ=+2.2°
+         wind̂=(+3.41,-5.02,-1.60) m/s  |wind̂|=6.28 m/s  |wind̂|_avg=3.50 m/s
+[  2.6s] φ= -6.9° V=18.1 m/s |h|=6.0 m R=120m(cfg120)
+         pos=(199.0, 1.5) path=(198.7, -4.5) err=(+0.3, +6.0) pos_age=1ms
+         θ=+72.6° θ̇=-0.1915 μ=-0.032 ψ=-9.0°
+         wind̂=(+3.98,-5.38,-1.42) m/s  |wind̂|=6.84 m/s  |wind̂|_avg=4.17 m/s
+[  3.1s] φ=-16.5° V=18.6 m/s |h|=8.8 m R=120m(cfg120)
+         pos=(206.9, 0.2) path=(209.4, -8.3) err=(-2.4, +8.5) pos_age=83ms
+         θ=+67.2° θ̇=-0.2025 μ=-0.014 ψ=-12.4°
+         wind̂=(+3.90,-5.01,-0.96) m/s  |wind̂|=6.43 m/s  |wind̂|_avg=4.54 m/s
+[  3.6s] φ=-26.9° V=19.1 m/s |h|=11.9 m R=120m(cfg120)
+         pos=(218.3, -2.2) path=(220.9, -13.8) err=(-2.6, +11.6) pos_age=0ms
+         θ=+61.1° θ̇=-0.2071 μ=-0.004 ψ=-12.9°
+         wind̂=(+3.24,-4.05,-0.80) m/s  |wind̂|=5.25 m/s  |wind̂|_avg=4.64 m/s
+[  4.1s] φ=-36.5° V=19.6 m/s |h|=15.5 m R=120m(cfg120)
+         pos=(228.4, -4.7) path=(231.1, -20.0) err=(-2.7, +15.3) pos_age=0ms
+         θ=+55.4° θ̇=-0.2056 μ=+0.007 ψ=-15.2°
+         wind̂=(+2.41,-2.83,-1.08) m/s  |wind̂|=3.87 m/s  |wind̂|_avg=4.55 m/s
+[  4.7s] φ=-44.2° V=20.0 m/s |h|=19.7 m R=120m(cfg120)
+         pos=(238.3, -8.0) path=(241.1, -27.5) err=(-2.8, +19.5) pos_age=0ms
+         θ=+49.4° θ̇=-0.1948 μ=+0.030 ψ=-21.3°
+         wind̂=(+1.17,-1.26,-1.72) m/s  |wind̂|=2.43 m/s  |wind̂|_avg=4.31 m/s
+[  5.2s] φ=-38.2° V=20.4 m/s |h|=22.3 m R=120m(cfg120)
+         pos=(247.7, -12.6) path=(249.0, -34.8) err=(-1.3, +22.2) pos_age=0ms
+         θ=+44.3° θ̇=-0.1748 μ=+0.045 ψ=-28.9°
+         wind̂=(+0.18,+0.21,-2.65) m/s  |wind̂|=2.66 m/s  |wind̂|_avg=4.15 m/s
+[  5.7s] φ=-27.8° V=20.6 m/s |h|=23.3 m R=120m(cfg120)
+         pos=(256.4, -19.0) path=(255.8, -42.3) err=(+0.6, +23.3) pos_age=0ms
+         θ=+39.6° θ̇=-0.1446 μ=+0.061 ψ=-43.1°
+         wind̂=(-0.73,+1.47,-3.85) m/s  |wind̂|=4.19 m/s  |wind̂|_avg=4.15 m/s
+[  6.2s] φ=-17.4° V=20.8 m/s |h|=21.9 m R=120m(cfg120)
+         pos=(263.8, -27.0) path=(260.8, -48.7) err=(+3.0, +21.7) pos_age=42ms
+         θ=+35.7° θ̇=-0.1172 μ=+0.041 ψ=-53.2°
+         wind̂=(-1.04,+1.92,-4.46) m/s  |wind̂|=4.96 m/s  |wind̂|_avg=4.22 m/s
+[  6.8s] φ= -7.2° V=15.4 m/s |h|=18.8 m R=120m(cfg120)
+         pos=(269.6, -36.2) path=(264.6, -54.3) err=(+5.0, +18.1) pos_age=43ms
+         θ=+32.5° θ̇=-0.0979 μ=+0.039 ψ=-56.5°
+         wind̂=(-0.84,+1.74,-4.36) m/s  |wind̂|=4.77 m/s  |wind̂|_avg=4.26 m/s
+[  7.3s] φ=-16.8° V=16.1 m/s |h|=13.8 m R=120m(cfg120)
+         pos=(274.4, -47.1) path=(267.5, -59.0) err=(+6.9, +11.9) pos_age=42ms
+         θ=+29.9° θ̇=-0.0953 μ=-0.016 ψ=-49.1°
+         wind̂=(-0.30,+0.52,-3.79) m/s  |wind̂|=3.84 m/s  |wind̂|_avg=4.23 m/s
+[  7.8s] φ=-24.8° V=16.7 m/s |h|=10.8 m R=120m(cfg120)
+         pos=(279.5, -58.3) path=(270.3, -64.1) err=(+9.2, +5.8) pos_age=1ms
+         θ=+27.1° θ̇=-0.1112 μ=-0.044 ψ=-56.3°
+         wind̂=(+0.29,-1.42,-2.69) m/s  |wind̂|=3.05 m/s  |wind̂|_avg=4.15 m/s
+[  8.3s] φ=-17.1° V=17.2 m/s |h|=10.9 m R=120m(cfg120)
+         pos=(284.3, -70.2) path=(273.4, -70.4) err=(+10.9, +0.3) pos_age=1ms
+         θ=+23.7° θ̇=-0.1375 μ=-0.067 ψ=-61.7°
+         wind̂=(+0.83,-3.73,-1.33) m/s  |wind̂|=4.05 m/s  |wind̂|_avg=4.15 m/s
+[  8.8s] φ=-20.7° V=17.6 m/s |h|=12.2 m R=120m(cfg120)
+         pos=(288.3, -82.4) path=(276.6, -78.6) err=(+11.6, -3.8) pos_age=0ms
+         θ=+19.4° θ̇=-0.1729 μ=-0.082 ψ=-66.6°
+         wind̂=(+1.42,-6.35,+0.01) m/s  |wind̂|=6.51 m/s  |wind̂|_avg=4.28 m/s
+[  9.3s] φ=-26.1° V=18.3 m/s |h|=13.2 m R=120m(cfg120)
+         pos=(291.6, -95.2) path=(279.9, -89.2) err=(+11.7, -6.1) pos_age=0ms
+         θ=+14.0° θ̇=-0.2143 μ=-0.092 ψ=-70.3°
+         wind̂=(+1.64,-9.15,+0.63) m/s  |wind̂|=9.32 m/s  |wind̂|_avg=4.56 m/s
+[  9.9s] φ=-34.5° V=19.0 m/s |h|=12.7 m R=120m(cfg120)
+         pos=(294.3, -108.9) path=(282.7, -103.6) err=(+11.6, -5.3) pos_age=0ms
+         θ=+6.9° θ̇=-0.2600 μ=-0.090 ψ=-75.4°
+         wind̂=(+1.22,-12.04,+0.65) m/s  |wind̂|=12.12 m/s  |wind̂|_avg=4.96 m/s
+[ 10.4s] φ=-35.7° V=19.6 m/s |h|=13.0 m R=120m(cfg120)
+         pos=(296.0, -122.9) path=(283.7, -118.5) err=(+12.3, -4.4) pos_age=0ms
+         θ=-0.2° θ̇=-0.2600 μ=-0.107 ψ=-81.9°
+         wind̂=(+0.44,-14.09,+0.24) m/s  |wind̂|=14.10 m/s  |wind̂|_avg=5.42 m/s
+[ 10.9s] φ=-35.2° V=19.7 m/s |h|=14.0 m R=120m(cfg120)
+         pos=(296.5, -137.3) path=(282.7, -134.7) err=(+13.7, -2.5) pos_age=0ms
+         θ=-8.0° θ̇=-0.2600 μ=-0.097 ψ=-90.9°
+         wind̂=(-0.69,-14.95,-0.61) m/s  |wind̂|=14.98 m/s  |wind̂|_avg=5.87 m/s
+[ 11.4s] φ=-35.4° V=19.8 m/s |h|=15.7 m R=120m(cfg120)
+         pos=(295.3, -151.4) path=(279.6, -150.6) err=(+15.7, -0.8) pos_age=42ms
+         θ=-15.7° θ̇=-0.2600 μ=-0.079 ψ=-100.7°
+         wind̂=(-1.75,-15.05,-1.81) m/s  |wind̂|=15.26 m/s  |wind̂|_avg=6.30 m/s
+[ 12.0s] φ= +nan° V=nan m/s |h|=16.7 m R=120m(cfg120)
+         pos=(292.2, -165.7) path=(275.8, -162.2) err=(+16.4, -3.5) pos_age=43ms
+         θ=-21.0° θ̇=-0.0200 μ=+1.000 ψ=-110.8°
+         wind̂=(+nan,+nan,+nan) m/s  |wind̂|=nan m/s  |wind̂|_avg=nan m/s
+[ 12.5s] φ= +nan° V=nan m/s |h|=19.7 m R=120m(cfg120)
+         pos=(287.2, -179.1) path=(275.4, -163.3) err=(+11.8, -15.8) pos_age=41ms
+         θ=-21.6° θ̇=-0.0200 μ=+1.000 ψ=-122.2°
+         wind̂=(+nan,+nan,+nan) m/s  |wind̂|=nan m/s  |wind̂|_avg=nan m/s
+[ 13.0s] φ= +nan° V=nan m/s |h|=27.3 m R=120m(cfg120)
+         pos=(280.6, -191.0) path=(274.9, -164.4) err=(+5.7, -26.7) pos_age=42ms
+         θ=-22.1° θ̇=-0.0200 μ=+1.000 ψ=-133.9°
+         wind̂=(+nan,+nan,+nan) m/s  |wind̂|=nan m/s  |wind̂|_avg=nan m/s
+[ 13.5s] φ= +nan° V=nan m/s |h|=36.4 m R=120m(cfg120)
+         pos=(272.5, -201.8) path=(274.5, -165.4) err=(-2.0, -36.4) pos_age=0ms
+         θ=-22.7° θ̇=-0.0200 μ=+1.000 ψ=-144.4°
+         wind̂=(+nan,+nan,+nan) m/s  |wind̂|=nan m/s  |wind̂|_avg=nan m/s
+[ 14.0s] φ= +nan° V=nan m/s |h|=45.7 m R=120m(cfg120)
+         pos=(263.2, -210.9) path=(274.1, -166.5) err=(-10.8, -44.4) pos_age=0ms
+         θ=-23.2° θ̇=-0.0200 μ=+1.000 ψ=-155.9°
+         wind̂=(+nan,+nan,+nan) m/s  |wind̂|=nan m/s  |wind̂|_avg=nan m/s
+[ 14.5s] φ= +nan° V=nan m/s |h|=53.1 m R=120m(cfg120)
+         pos=(254.7, -217.2) path=(273.6, -167.5) err=(-18.9, -49.7) pos_age=83ms
+         θ=-23.8° θ̇=-0.0200 μ=+1.000 ψ=-165.5°
+         wind̂=(+nan,+nan,+nan) m/s  |wind̂|=nan m/s  |wind̂|_avg=nan m/s
+[ 15.0s] φ= +nan° V=nan m/s |h|=63.0 m R=120m(cfg120)
+         pos=(242.3, -223.6) path=(273.1, -168.7) err=(-30.8, -54.9) pos_age=0ms
+         θ=-24.4° θ̇=-0.0200 μ=+1.000 ψ=-178.1°
+         wind̂=(+nan,+nan,+nan) m/s  |wind̂|=nan m/s  |wind̂|_avg=nan m/s
+[ 15.6s] φ= +nan° V=nan m/s |h|=70.7 m R=120m(cfg120)
+         pos=(231.0, -227.0) path=(272.6, -169.8) err=(-41.6, -57.2) pos_age=1ms
+         θ=-25.0° θ̇=-0.0200 μ=+1.000 ψ=+171.3°
+         wind̂=(+nan,+nan,+nan) m/s  |wind̂|=nan m/s  |wind̂|_avg=nan m/s
+[ 16.1s] φ= +nan° V=nan m/s |h|=77.6 m R=120m(cfg120)
+         pos=(219.7, -228.2) path=(272.0, -170.9) err=(-52.4, -57.3) pos_age=41ms
+         θ=-25.6° θ̇=-0.0200 μ=+1.000 ψ=+161.1°
+         wind̂=(+nan,+nan,+nan) m/s  |wind̂|=nan m/s  |wind̂|_avg=nan m/s
+[ 16.7s] φ= +nan° V=nan m/s |h|=83.8 m R=120m(cfg120)
+         pos=(208.5, -227.4) path=(271.5, -172.1) err=(-63.0, -55.3) pos_age=82ms
+         θ=-26.1° θ̇=-0.0200 μ=+1.000 ψ=+150.9°
+         wind̂=(+nan,+nan,+nan) m/s  |wind̂|=nan m/s  |wind̂|_avg=nan m/s
+[ 17.2s] φ= +nan° V=nan m/s |h|=90.2 m R=120m(cfg120)
+         pos=(196.2, -223.7) path=(270.9, -173.2) err=(-74.7, -50.5) pos_age=0ms
+         θ=-26.7° θ̇=-0.0200 μ=+1.000 ψ=+139.9°
+         wind̂=(+nan,+nan,+nan) m/s  |wind̂|=nan m/s  |wind̂|_avg=nan m/s
+[ 17.8s] φ= +nan° V=nan m/s |h|=94.6 m R=120m(cfg120)
+         pos=(186.6, -218.4) path=(270.4, -174.3) err=(-83.7, -44.1) pos_age=1ms
+         θ=-27.3° θ̇=-0.0200 μ=+1.000 ψ=+130.4°
+         wind̂=(+nan,+nan,+nan) m/s  |wind̂|=nan m/s  |wind̂|_avg=nan m/s
+[ 18.3s] φ= +nan° V=nan m/s |h|=98.3 m R=120m(cfg120)
+         pos=(178.4, -211.2) path=(269.8, -175.3) err=(-91.5, -35.9) pos_age=0ms
+         θ=-27.9° θ̇=-0.0200 μ=+1.000 ψ=+121.5°
+         wind̂=(+nan,+nan,+nan) m/s  |wind̂|=nan m/s  |wind̂|_avg=nan m/s
+[ 18.8s] φ= +nan° V=nan m/s |h|=101.2 m R=120m(cfg120)
+         pos=(171.5, -202.4) path=(269.3, -176.4) err=(-97.8, -26.0) pos_age=41ms
+         θ=-28.5° θ̇=-0.0200 μ=+1.000 ψ=+112.8°
+         wind̂=(+nan,+nan,+nan) m/s  |wind̂|=nan m/s  |wind̂|_avg=nan m/s
+[ 19.3s] φ= +nan° V=nan m/s |h|=103.4 m R=120m(cfg120)
+         pos=(166.3, -192.1) path=(268.7, -177.4) err=(-102.4, -14.7) pos_age=1ms
+         θ=-29.0° θ̇=-0.0200 μ=+1.000 ψ=+104.5°
+         wind̂=(+nan,+nan,+nan) m/s  |wind̂|=nan m/s  |wind̂|_avg=nan m/s
+[ 19.8s] φ= +nan° V=nan m/s |h|=105.0 m R=120m(cfg120)
+         pos=(163.1, -180.8) path=(268.1, -178.4) err=(-105.0, -2.4) pos_age=0ms
+         θ=-29.6° θ̇=-0.0200 μ=+1.000 ψ=+96.5°
+         wind̂=(+nan,+nan,+nan) m/s  |wind̂|=nan m/s  |wind̂|_avg=nan m/s
+[ 20.3s] φ= +nan° V=nan m/s |h|=106.2 m R=120m(cfg120)
+         pos=(161.9, -168.4) path=(267.6, -179.4) err=(-105.6, +11.0) pos_age=0ms
+         θ=-30.1° θ̇=-0.0200 μ=+1.000 ψ=+89.5°
+         wind̂=(+nan,+nan,+nan) m/s  |wind̂|=nan m/s  |wind̂|_avg=nan m/s
+[ 20.8s] φ= +nan° V=nan m/s |h|=107.0 m R=120m(cfg120)
+         pos=(162.9, -155.3) path=(267.0, -180.4) err=(-104.0, +25.2) pos_age=1ms
+         θ=-30.7° θ̇=-0.0200 μ=+1.000 ψ=+82.1°
+         wind̂=(+nan,+nan,+nan) m/s  |wind̂|=nan m/s  |wind̂|_avg=nan m/s
+[ 21.4s] φ= +nan° V=nan m/s |h|=107.6 m R=120m(cfg120)
+         pos=(166.1, -142.3) path=(266.4, -181.4) err=(-100.3, +39.1) pos_age=0ms
+         θ=-31.2° θ̇=-0.0200 μ=+1.000 ψ=+75.8°
+         wind̂=(+nan,+nan,+nan) m/s  |wind̂|=nan m/s  |wind̂|_avg=nan m/s
+[ 21.9s] φ= +nan° V=nan m/s |h|=108.1 m R=120m(cfg120)
+         pos=(170.5, -131.4) path=(265.8, -182.4) err=(-95.3, +51.0) pos_age=43ms
+         θ=-31.8° θ̇=-0.0200 μ=+1.000 ψ=+68.9°
+         wind̂=(+nan,+nan,+nan) m/s  |wind̂|=nan m/s  |wind̂|_avg=nan m/s
+[ 22.4s] φ= +nan° V=nan m/s |h|=108.3 m R=120m(cfg120)
+         pos=(177.8, -119.4) path=(265.2, -183.4) err=(-87.4, +64.0) pos_age=42ms
+         θ=-32.3° θ̇=-0.0200 μ=+1.000 ψ=+62.8°
+         wind̂=(+nan,+nan,+nan) m/s  |wind̂|=nan m/s  |wind̂|_avg=nan m/s
+[ 22.9s] φ= +nan° V=nan m/s |h|=105.1 m R=120m(cfg120)
+         pos=(182.9, -118.3) path=(264.6, -184.3) err=(-81.7, +66.1) pos_age=42ms
+         θ=-32.9° θ̇=-0.0200 μ=+1.000 ψ=+50.7°
+         wind̂=(+nan,+nan,+nan) m/s  |wind̂|=nan m/s  |wind̂|_avg=nan m/s
+[ 23.4s] φ= +nan° V=nan m/s |h|=101.3 m R=120m(cfg120)
+         pos=(187.6, -118.8) path=(263.9, -185.4) err=(-76.3, +66.6) pos_age=42ms
+         θ=-33.5° θ̇=-0.0200 μ=+1.000 ψ=+45.0°
+         wind̂=(+nan,+nan,+nan) m/s  |wind̂|=nan m/s  |wind̂|_avg=nan m/s
+[ 24.0s] φ= +nan° V=nan m/s |h|=97.1 m R=120m(cfg120)
+         pos=(193.1, -119.2) path=(263.2, -186.4) err=(-70.0, +67.2) pos_age=0ms
+         θ=-34.1° θ̇=-0.0200 μ=+1.000 ψ=+41.7°
+         wind̂=(+nan,+nan,+nan) m/s  |wind̂|=nan m/s  |wind̂|_avg=nan m/s
+[ 24.5s] φ= +nan° V=nan m/s |h|=94.4 m R=120m(cfg120)
+         pos=(197.0, -119.4) path=(262.5, -187.4) err=(-65.5, +68.0) pos_age=42ms
+         θ=-34.6° θ̇=-0.0200 μ=+1.000 ψ=+40.3°
+         wind̂=(+nan,+nan,+nan) m/s  |wind̂|=nan m/s  |wind̂|_avg=nan m/s
+[ 25.0s] φ= +nan° V=nan m/s |h|=90.8 m R=120m(cfg120)
+         pos=(202.6, -119.6) path=(261.8, -188.4) err=(-59.3, +68.8) pos_age=0ms
+         θ=-35.2° θ̇=-0.0200 μ=+1.000 ψ=+39.2°
+         wind̂=(+nan,+nan,+nan) m/s  |wind̂|=nan m/s  |wind̂|_avg=nan m/s
+[ 25.5s] φ= +nan° V=nan m/s |h|=88.5 m R=120m(cfg120)
+         pos=(206.5, -119.7) path=(261.2, -189.3) err=(-54.7, +69.7) pos_age=42ms
+         θ=-35.8° θ̇=-0.0200 μ=+1.000 ψ=+37.9°
+         wind̂=(+nan,+nan,+nan) m/s  |wind̂|=nan m/s  |wind̂|_avg=nan m/s
+[ 26.0s] φ= +nan° V=nan m/s |h|=84.8 m R=120m(cfg120)
+         pos=(212.6, -120.3) path=(260.4, -190.3) err=(-47.8, +70.1) pos_age=0ms
+         θ=-36.4° θ̇=-0.0200 μ=+1.000 ψ=+34.0°
+         wind̂=(+nan,+nan,+nan) m/s  |wind̂|=nan m/s  |wind̂|_avg=nan m/s
+[ 26.5s] φ= +nan° V=nan m/s |h|=82.0 m R=120m(cfg120)
+         pos=(217.1, -121.2) path=(259.7, -191.3) err=(-42.6, +70.1) pos_age=42ms
+         θ=-36.9° θ̇=-0.0200 μ=+1.000 ψ=+26.7°
+         wind̂=(+nan,+nan,+nan) m/s  |wind̂|=nan m/s  |wind̂|_avg=nan m/s
+[ 27.0s] φ= +nan° V=nan m/s |h|=78.2 m R=120m(cfg120)
+         pos=(222.7, -122.9) path=(259.0, -192.2) err=(-36.3, +69.3) pos_age=43ms
+         θ=-37.5° θ̇=-0.0200 μ=+1.000 ψ=+16.1°
+         wind̂=(+nan,+nan,+nan) m/s  |wind̂|=nan m/s  |wind̂|_avg=nan m/s
+[ 27.6s] φ= +nan° V=nan m/s |h|=73.9 m R=120m(cfg120)
+         pos=(228.3, -125.6) path=(258.3, -193.1) err=(-30.1, +67.5) pos_age=45ms
+         θ=-38.0° θ̇=-0.0200 μ=+1.000 ψ=+6.2°
+         wind̂=(+nan,+nan,+nan) m/s  |wind̂|=nan m/s  |wind̂|_avg=nan m/s
+[ 28.1s] φ= +nan° V=nan m/s |h|=68.7 m R=120m(cfg120)
+         pos=(233.8, -129.6) path=(257.6, -194.0) err=(-23.8, +64.4) pos_age=42ms
+         θ=-38.6° θ̇=-0.0200 μ=+1.000 ψ=-2.8°
+         wind̂=(+nan,+nan,+nan) m/s  |wind̂|=nan m/s  |wind̂|_avg=nan m/s
+[ 28.6s] φ= +nan° V=nan m/s |h|=62.8 m R=120m(cfg120)
+         pos=(239.2, -134.7) path=(256.9, -194.9) err=(-17.7, +60.2) pos_age=1ms
+         θ=-39.1° θ̇=-0.0200 μ=+1.000 ψ=-13.0°
+         wind̂=(+nan,+nan,+nan) m/s  |wind̂|=nan m/s  |wind̂|_avg=nan m/s
+[ 29.1s] φ= +nan° V=nan m/s |h|=56.3 m R=120m(cfg120)
+         pos=(244.0, -140.8) path=(256.2, -195.8) err=(-12.2, +55.0) pos_age=0ms
+         θ=-39.7° θ̇=-0.0200 μ=+1.000 ψ=-26.8°
+         wind̂=(+nan,+nan,+nan) m/s  |wind̂|=nan m/s  |wind̂|_avg=nan m/s
+[ 29.6s] φ= +nan° V=nan m/s |h|=49.0 m R=120m(cfg120)
+         pos=(248.3, -148.3) path=(255.4, -196.8) err=(-7.1, +48.4) pos_age=0ms
+         θ=-40.3° θ̇=-0.0200 μ=+1.000 ψ=-43.0°
+         wind̂=(+nan,+nan,+nan) m/s  |wind̂|=nan m/s  |wind̂|_avg=nan m/s
+[ 30.1s] φ= +nan° V=nan m/s |h|=42.5 m R=120m(cfg120)
+         pos=(250.9, -155.3) path=(254.6, -197.6) err=(-3.8, +42.4) pos_age=0ms
+         θ=-40.8° θ̇=-0.0200 μ=+1.000 ψ=-58.1°
+         wind̂=(+nan,+nan,+nan) m/s  |wind̂|=nan m/s  |wind̂|_avg=nan m/s
+[ 30.7s] φ= +nan° V=nan m/s |h|=35.1 m R=120m(cfg120)
+         pos=(252.7, -163.5) path=(253.8, -198.6) err=(-1.1, +35.0) pos_age=1ms
+         θ=-41.4° θ̇=-0.0200 μ=+1.000 ψ=-71.2°
+         wind̂=(+nan,+nan,+nan) m/s  |wind̂|=nan m/s  |wind̂|_avg=nan m/s
+[ 31.2s] φ= +nan° V=nan m/s |h|=35.9 m R=120m(cfg120)
+         pos=(252.7, -163.5) path=(253.0, -199.4) err=(-0.3, +35.9) pos_age=501ms
+         θ=-42.0° θ̇=-0.0200 μ=+1.000 ψ=-71.2°
+         wind̂=(+nan,+nan,+nan) m/s  |wind̂|=nan m/s  |wind̂|_avg=nan m/s
+[ 31.7s] φ= +nan° V=nan m/s |h|=36.8 m R=120m(cfg120)
+         pos=(252.7, -163.5) path=(252.2, -200.4) err=(+0.5, +36.8) pos_age=1036ms
+         θ=-42.6° θ̇=-0.0200 μ=+1.000 ψ=-71.2°
+         wind̂=(+nan,+nan,+nan) m/s  |wind̂|=nan m/s  |wind̂|_avg=nan m/s
+[ 32.2s] φ= +nan° V=nan m/s |h|=37.8 m R=120m(cfg120)
+         pos=(252.7, -163.5) path=(251.3, -201.3) err=(+1.4, +37.7) pos_age=1571ms
+         θ=-43.2° θ̇=-0.0200 μ=+1.000 ψ=-71.2°
+         wind̂=(+nan,+nan,+nan) m/s  |wind̂|=nan m/s  |wind̂|_avg=nan m/s
+[ 32.8s] φ= +nan° V=nan m/s |h|=38.7 m R=120m(cfg120)
+         pos=(252.7, -163.5) path=(250.5, -202.2) err=(+2.2, +38.6) pos_age=2109ms
+         θ=-43.7° θ̇=-0.0200 μ=+1.000 ψ=-71.2°
+         wind̂=(+nan,+nan,+nan) m/s  |wind̂|=nan m/s  |wind̂|_avg=nan m/s
+[ 33.3s] φ= +nan° V=nan m/s |h|=39.5 m R=120m(cfg120)
+         pos=(252.7, -163.5) path=(249.8, -202.9) err=(+2.9, +39.4) pos_age=2634ms
+         θ=-44.3° θ̇=-0.0200 μ=+1.000 ψ=-71.2°
+         wind̂=(+nan,+nan,+nan) m/s  |wind̂|=nan m/s  |wind̂|_avg=nan m/s
+[ 33.8s] φ= +nan° V=nan m/s |h|=40.4 m R=120m(cfg120)
+         pos=(252.7, -163.5) path=(248.9, -203.8) err=(+3.7, +40.2) pos_age=3138ms
+         θ=-44.8° θ̇=-0.0200 μ=+1.000 ψ=-71.2°
+         wind̂=(+nan,+nan,+nan) m/s  |wind̂|=nan m/s  |wind̂|_avg=nan m/s
+[ 34.3s] φ= +nan° V=nan m/s |h|=41.4 m R=120m(cfg120)
+         pos=(252.7, -163.5) path=(248.1, -204.6) err=(+4.6, +41.1) pos_age=3675ms
+         θ=-45.4° θ̇=-0.0200 μ=+1.000 ψ=-71.2°
+         wind̂=(+nan,+nan,+nan) m/s  |wind̂|=nan m/s  |wind̂|_avg=nan m/s
+[ 34.9s] φ= +nan° V=nan m/s |h|=42.3 m R=120m(cfg120)
+         pos=(252.7, -163.5) path=(247.2, -205.5) err=(+5.5, +42.0) pos_age=4210ms
+         θ=-46.0° θ̇=-0.0200 μ=+1.000 ψ=-71.2°
+         wind̂=(+nan,+nan,+nan) m/s  |wind̂|=nan m/s  |wind̂|_avg=nan m/s
+[ 35.4s] φ= +nan° V=nan m/s |h|=43.3 m R=120m(cfg120)
+         pos=(252.7, -163.5) path=(246.3, -206.4) err=(+6.4, +42.8) pos_age=4746ms
+         θ=-46.6° θ̇=-0.0200 μ=+1.000 ψ=-71.2°
+         wind̂=(+nan,+nan,+nan) m/s  |wind̂|=nan m/s  |wind̂|_avg=nan m/s
+[ 35.9s] φ= +nan° V=nan m/s |h|=44.3 m R=120m(cfg120)
+         pos=(252.7, -163.5) path=(245.4, -207.2) err=(+7.3, +43.7) pos_age=5281ms
+         θ=-47.2° θ̇=-0.0200 μ=+1.000 ψ=-71.2°
+         wind̂=(+nan,+nan,+nan) m/s  |wind̂|=nan m/s  |wind̂|_avg=nan m/s
+[ 36.5s] φ= +nan° V=nan m/s |h|=45.3 m R=120m(cfg120)
+         pos=(252.7, -163.5) path=(244.4, -208.1) err=(+8.3, +44.5) pos_age=5815ms
+         θ=-47.8° θ̇=-0.0200 μ=+1.000 ψ=-71.2°
+         wind̂=(+nan,+nan,+nan) m/s  |wind̂|=nan m/s  |wind̂|_avg=nan m/s
+[ 37.0s] φ= +nan° V=nan m/s |h|=46.3 m R=120m(cfg120)
+         pos=(252.7, -163.5) path=(243.5, -208.9) err=(+9.2, +45.4) pos_age=6350ms
+         θ=-48.4° θ̇=-0.0200 μ=+1.000 ψ=-71.2°
+         wind̂=(+nan,+nan,+nan) m/s  |wind̂|=nan m/s  |wind̂|_avg=nan m/s
+[ 37.5s] φ= +nan° V=nan m/s |h|=47.3 m R=120m(cfg120)
+         pos=(252.7, -163.5) path=(242.6, -209.7) err=(+10.1, +46.2) pos_age=6885ms
+         θ=-49.0° θ̇=-0.0200 μ=+1.000 ψ=-71.2°
+         wind̂=(+nan,+nan,+nan) m/s  |wind̂|=nan m/s  |wind̂|_avg=nan m/s
+❌ 已退出 OFFBOARD，中止路径跟随
+# 任务中止 历时=37.7s
